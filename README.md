@@ -1,92 +1,59 @@
 # One stop medical shop
 
+We want to build a one stop eCommerce shop for providing medical equipments and products. For this we have identified the Magento as our eCommerce platfrom and also gathered data on the medical equipments and products. We now want to see our Magento eCommerce shop populated with the gathered data.
 
+## Test Description
 
-## Getting started
+We will be providing you with instructions on the working tech stack, datasets, expected outcome and results.
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+### Tech stack
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+- Magento
+- Backend of your choice
+- Docker/ Docker Compose
+- Neo4j
 
-## Add your files
+### Datasets
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+We are providing with sample products from two data sources. The dataset contains information on products and could also contain some common products in both files.
 
-```
-cd existing_repo
-git remote add origin https://gitlab.com/sc-tests/one-stop-medical-shop.git
-git branch -M main
-git push -uf origin main
-```
+- [products_sample_01.json](./datasets/products_sample_01.json)
+- [products_sample_02.json](./datasets/products_sample_02.json)
 
-## Integrate with your tools
+You are expected understand the requirements of the final output and based on the analsis, transform, and aggregate the data into acceptable processed data suitable for importing products in Magento eCommerce shop.
 
-- [ ] [Set up project integrations](https://gitlab.com/sc-tests/one-stop-medical-shop/-/settings/integrations)
+### Neo4j graph database
 
-## Collaborate with your team
+The dataset we are using is highly connected data and we would be using Neo4j to intermediately store, process and aggregate the data items from the dataset files.
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Automatically merge when pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+You are expected to import the data in Neo4j and show relations among the common product groups and relations between the attributes and the product items.
 
-## Test and Deploy
+### Expected outcome in Magento eCommerce shop
 
-Use the built-in continuous integration in GitLab.
+As mentioned above we want to build one stop eCommerce shop for providing medical equipments and products, hence as a requirement we want to see the working demo of a Magento eCommerce store with the catalogoue of products from the provided datasets.
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+You are expected to create a docker compose file for the deployments of services and databases.
 
-***
+**Product attributes highlighted in the box from the datasets**
+![](/assets/product-attributes.png)
 
-# Editing this README
+**Product features highlighted in the box from the datasets**
+![](/assets/product-features.png)
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
+**Product specifications highlighted in the box from the datasets**
+![](/assets/product-specifications.png)
 
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+## Submission Checklist
 
-## Name
-Choose a self-explaining name for your project.
+Once you have completed the test successfully you are expected to provide following:
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
-
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
-
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+- Git repository and working code (live demo link/ steps to run service)
+  - Deployments should be done using docker/ docker compose for all the services, servers and databases
+  - You can fork this repository and share the Merge Request for submission
+- Neo4j data visualizations, screenshots, recording or a demo link
+  - relations among the common product groups
+  - relations between the attributes and the product items
+- Share README.md, DEPLOYMENT.md, etc
+  - Mention of documentation/ references/ tutorials followed
+  - Clearly documenting steps to deploy and use the service
+- Add in detail about one key takeaway or a new skill you picked from this exercise, providing references to articles, tutorials, examples, etc.
