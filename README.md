@@ -26,7 +26,14 @@ You are expected understand the requirements of the final output and based on th
 
 The dataset we are using is highly connected data and we would be using Neo4j to intermediately store, process and aggregate the data items from the dataset files.
 
-You are expected to import the data in Neo4j and show relations among the common product groups and relations between the attributes and the product items.
+You are expected to use [products_sample_01.json](./datasets/products_sample_01.json) and [products_sample_02.json](./datasets/products_sample_02.json) and import the data in Neo4j and show relations among the common product groups and relations between the attributes and the product items. Following are the sample nodes generated from products of [products_sample_01.json](./datasets/products_sample_01.json).
+
+**Overview of Product, Brand, Manufacturer in neo4j nodes from sample 01**
+![](/assets/neo4j-overview.png)
+
+**Relationship among Product, Brand, Manufacturer in neo4j nodes from sample 01**
+![](/assets/neo4j-relations.png)
+
 
 ### Expected outcome in Magento eCommerce shop
 
