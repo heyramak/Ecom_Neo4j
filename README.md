@@ -8,7 +8,7 @@ We will be providing you with instructions on the working tech stack, datasets, 
 
 ### Tech stack
 
-- Magento
+- Any e commerce framework of your choice(like Magento, woo commerce, shopify plus e.t.c)
 - Backend of your choice
 - Docker/ Docker Compose
 - Neo4j
