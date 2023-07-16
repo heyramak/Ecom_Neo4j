@@ -5,7 +5,6 @@ This guide will walk you through the steps to deploy Neo4j DB and WordPress cont
 
 ## Prerequisites
 - Docker installed on your system.
-- Python 3.9
 
 ## Create a Docker network
 Using Docker container networking, a different server running inside a container can easily be accessed by your application containers and vice-versa.
@@ -70,21 +69,18 @@ docker run -d --name wordpress \
   
 ## Neo4j Docker Deployment
 In this steps, we will deploy the Neo4j container using Docker
-### Step 1: Pull the Bitnami Neo4j Docker Image
-```
-bash
+### Step 1: Pull the  Neo4j Docker Image
+```bash
 docker pull bitnami/neo4j:latest
 ```
 
 ### Step 2: Create a Docker volume for Neo4j data
-```
-bash
+```bash
 docker volume create neo4j_data
 ```
 
-### Step 3: Deploy Bitnami Neo4j Container
-```
-bash
+### Step 3: Deploy Neo4j Container
+```bash
 
 docker run -d \
   --name neo4j \
