@@ -81,7 +81,6 @@ docker volume create neo4j_data
 
 ### Step 3: Deploy Neo4j Container
 ```bash
-
 docker run -d \
   --name neo4j \
   -p 7474:7474 \

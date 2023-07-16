@@ -10,6 +10,7 @@ One stop eCommerce shop for providing medical equipments and products.
 - [Environment Variables](#environment-variables)
 - [Neo4j Visualization Screenshots](#neo4j-visualization-screenshots)
 - [Authors And Contributors](#authors-and-contributors)
+- [References](#references)
 ## Woocommerce Store Setup
 
 To get it we need to complete the simple steps explained below
@@ -88,4 +89,10 @@ To run the above two project, you will need to add the following environment var
 ## Authors And Contributors
 
 - [@heyramak](https://github.com/heyramak)
+
+## References
+- [https://woocommerce.github.io/woocommerce-rest-api-docs/](https://woocommerce.github.io/woocommerce-rest-api-docs/)
+- [https://neo4j.com/labs/apoc/4.1/import/load-json/](https://neo4j.com/labs/apoc/4.1/import/load-json/)
+- [https://neo4j.com/developer/cypher/](https://neo4j.com/developer/cypher/)
+- [https://docs.docker.com/network/](https://docs.docker.com/network/)
 
