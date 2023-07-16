@@ -8,8 +8,8 @@ One stop eCommerce shop for providing medical equipments and products.
 - [Woocommerce Store Setup](#woocommerce-store-setup)
 - [Run Locally](#run-locally)
 - [Environment Variables](#environment-variables)
-- [Screenshots](#screenshots)
-- [Authors](#authors)
+- [Neo4j Visualization Screenshots](#neo4j-visualization-screenshots)
+- [Authors And Contributors](#authors-and-contributors)
 ## Woocommerce Store Setup
 
 To get it we need to complete the simple steps explained below
@@ -36,7 +36,7 @@ Install the woo-commerce plugin similar to the last step
 #### Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://gitlab.com/heyramak/one-stop-medical-shop
 ```
 #### Json to Neo4j app
 
@@ -73,12 +73,19 @@ To run the above two project, you will need to add the following environment var
 
 
 
-## Screenshots
+## Neo4j Visualization Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+#### Neo4j data overview 
+![Neo4j Overview](https://gitlab.com/heyramak/one-stop-medical-shop/-/blob/main/assets/overview.png)
+
+#### Product and Feature Relationship 
+![Product and Feature Relationship](https://gitlab.com/heyramak/one-stop-medical-shop/-/blob/main/assets/product-and-feature-relationship.png)
+
+#### Product Category Grouping
+![Product Category Grouping](https://gitlab.com/heyramak/one-stop-medical-shop/-/blob/main/assets/product-grouping-according-to-category.png)
 
 
-## Authors
+## Authors And Contributors
 
 - [@heyramak](https://github.com/heyramak)
 
