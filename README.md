@@ -76,7 +76,7 @@ To run the above two project, you will need to add the following environment var
 ## Neo4j Visualization Screenshots
 
 #### Neo4j data overview 
-![Neo4j Overview](heyramak/one-stop-medical-shop/-/blob/main/assets/overview.png)
+![Neo4j Overview](assets/overview.png)
 
 #### Product and Feature Relationship 
 ![Product and Feature Relationship](heyramak/one-stop-medical-shop/-/blob/main/assets/product-and-feature-relationship.png)
