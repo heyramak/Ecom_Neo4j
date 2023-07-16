@@ -79,10 +79,10 @@ To run the above two project, you will need to add the following environment var
 ![Neo4j Overview](assets/overview.png)
 
 #### Product and Feature Relationship 
-![Product and Feature Relationship](heyramak/one-stop-medical-shop/-/blob/main/assets/product-and-feature-relationship.png)
+![Product and Feature Relationship](assets/product-and-feature-relationship.png)
 
 #### Product Category Grouping
-![Product Category Grouping](heyramak/one-stop-medical-shop/-/blob/main/assets/product-grouping-according-to-category.png)
+![Product Category Grouping](assets/product-grouping-according-to-category.png)
 
 
 ## Authors And Contributors
