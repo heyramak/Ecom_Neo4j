@@ -106,7 +106,7 @@ To run the above two project, you will need to add the following environment var
 ![Product Server Side](assets/admin-product-page.jpg)
 ## Neo4j Visualization Screenshots
 #### Neo4j Browser Homepage After Data Population
-![Neo4j Browser Homepage](assets/admin-product-page.jpg)
+![Neo4j Browser Homepage](assets/neo4j-browser.jpg)
 
 #### Sample Overview of 5 Products and All the Associated Relationship Nodes to It
 ![Sample Overview of 5 Products and All the Associated Relationship Nodes to It](assets/sample-overview-of-5-products.jpg)
