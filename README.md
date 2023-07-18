@@ -37,15 +37,15 @@ Replace the `CONTAINER_NAME_OR_ID` with Wordpress container name or ID on the co
 ```
 #### Step 2 - Login Into Wordpress
 Access the Wordpress from ```http://localhost:8080/wp-admin/``` and login with default credentials.
-      - Username: user
-      - Password: bitnami
+- Username: user
+- Password: bitnami
 
 #### Step 3 - Generate RestAPI keys
 
 Follow the steps and generate the restapi keys and update that in .env files in both backend folder.
 ```Dashboard > Woocommerce > Settings > Advanced > RestAPI```
-![Step - 1](assets\restapi-key-gen-step1.jpg)
-![Step - 2](assets\restapi-key-gen-step2.jpg)
+![Step - 1](assets/restapi-key-gen-step1.jpg)
+![Step - 2](assets/restapi-key-gen-step2.jpg)
 
 #### Data Population App For Neo4j
  
@@ -84,20 +84,20 @@ To run the above two project, you will need to add the following environment var
 
 ## Ecommerce Application Screenshots
 #### Homepage
-![Homepage](assets\homepage.jpg)
+![Homepage](assets/homepage.jpg)
 #### Shopping Page
-![Homepage](assets\shopping-page.jpg)
+![Shopping Page](assets/shopping-page.jpg)
 
 #### Product Page
-![Homepage](assets\product1.jpg)
-![Homepage](assets\product2.jpg)
+![Product Page 1](assets/product1.jpg)
+![Product Page 2](assets/product2.jpg)
 
 ## Neo4j Visualization Screenshots
 #### Neo4j Browser Homepage After Data Population
-![Neo4j Browser Homepage](assets\neo4j-browser.jpg)
+![Neo4j Browser Homepage](assets/neo4j-browser.jpg)
 
 #### Sample Overview of 5 Products and All the Associated Relationship Nodes to It
-![Sample Overview of 5 Products and All the Associated Relationship Nodes to It](assets\sample-overview-of-5-products.jpg)
+![Sample Overview of 5 Products and All the Associated Relationship Nodes to It](assets/sample-overview-of-5-products.jpg)
 #### Product And Feature Relationship 
 ![Product and Feature Relationship](assets/product-and-feature-relationship.png)
 
@@ -105,10 +105,10 @@ To run the above two project, you will need to add the following environment var
 ![Product Category Grouping](assets/product-grouping-according-to-category.png)
 
 #### Product And Brand Relationship
-![Product Category Grouping](assets\relationship-between-brand-and-products.png)
+![Product And Brand Relationship](assets/relationship-between-brand-and-products.png)
 
 #### Product And Manufacturer Relationship
-![Product Category Grouping](assets\relationship-between-manufacturer-and-products.png)
+![Product And Manufacturer Relationship](assets/relationship-between-manufacturer-and-products.png)
 ## Authors And Contributors
 
 - [@heyramak](https://github.com/heyramak)
