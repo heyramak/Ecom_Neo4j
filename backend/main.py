@@ -55,25 +55,6 @@ def generate_random_string(length):
     random_string = ''.join(random.choices(characters, k=length))
     return random_string.upper()
 
-"""def get_image_links(query,image):
-    api_key = os.getenv("GOOGLE_API")
-    search_engine_id = os.getenv("GOOGLE_SEARCH_ID")
-
-
-    url = f"https://www.googleapis.com/customsearch/v1?key={api_key}&cx={search_engine_id}&searchType=image&q={query}"
-    response = requests.get(url)
-    data = response.json()
-
-    img_links = []
-    img_links.append(image)
-
-    if "items" in data:
-        items = data["items"]
-        for item in items:  
-            img_link = item["link"]
-            img_links.append(img_link)
-
-    return img_links"""
 
 # Define the Cypher query to retrieve product details
 cypher_query = """
@@ -121,8 +102,7 @@ with driver.session() as session:
         description = record["description"] if record["description"] is not None else ""
         title_description = title + " " + description
 
-        #image_links = get_image_links(title_description, record["image"])
-
+        
         image_links = record["image"]
         
         # Generate unique string
