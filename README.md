@@ -42,23 +42,31 @@ Access the Wordpress from ```http://localhost:8080/wp-admin/``` and login with d
 
 #### Step 3 - Generate RestAPI keys
 
-Follow the steps and generate the restapi keys and update that in .env files in both backend folder.
+Follow the below steps and generate the restapi keys with read and write access and update that in .env files in backend folder.
 ```Dashboard > Woocommerce > Settings > Advanced > RestAPI```
-![Step - 1](assets/restapi-key-gen-step1.jpg)
-![Step - 2](assets/restapi-key-gen-step2.jpg)
 
+![Step - 1](assets\restapi-key-gen-step1.jpg)
+![Step - 2](assets\restapi-key-gen-step2.jpg)
+![Step - 3](assets\restapi-key-gen-step3.jpg)
 #### Data Population App For Neo4j
  
 ```bash
-  cd /data-populate
+  cd data-populate
   docker build -t data-populate-service .
   docker run -d --name=data-server --network=host data-populate-service
 ```
 After succcesful completion this Docker container exit and you can see and verify all the JSON data in given dataset is populated along with its relationship in Neo4j browser ```http://localhost:7474```.
+
+You can run this sample query on Neo4j browser to verify the datapopulation
+```bash
+  MATCH (n)-[r]-()
+  RETURN n, r
+  LIMIT 300
+```
 #### Backend App For Woocommerce-Wordpress
 
 ```bash
-  cd /backend
+  cd .. && cd backend
   docker build -t backend-service .
   docker run -d --name=backend-server --network=host backend-service
 ```
@@ -87,14 +95,17 @@ To run the above two project, you will need to add the following environment var
 ![Homepage](assets/homepage.jpg)
 #### Shopping Page
 ![Shopping Page](assets/shopping-page.jpg)
+![Shopping Page](assets/shopping-page2.jpg)
 
 #### Product Page
-![Product Page 1](assets/product1.jpg)
-![Product Page 2](assets/product2.jpg)
-
+![Product Page](assets/product1.jpg)
+![Product Page](assets/product2.jpg)
+![Product Page](assets/product3.jpg)
+#### Product Page Server Side
+![Product Server Side](assets/admin-product-page.jpg)
 ## Neo4j Visualization Screenshots
 #### Neo4j Browser Homepage After Data Population
-![Neo4j Browser Homepage](assets/neo4j-browser.jpg)
+![Neo4j Browser Homepage](assets/admin-product-page.jpg)
 
 #### Sample Overview of 5 Products and All the Associated Relationship Nodes to It
 ![Sample Overview of 5 Products and All the Associated Relationship Nodes to It](assets/sample-overview-of-5-products.jpg)
@@ -105,10 +116,10 @@ To run the above two project, you will need to add the following environment var
 ![Product Category Grouping](assets/product-grouping-according-to-category.png)
 
 #### Product And Brand Relationship
-![Product And Brand Relationship](assets/relationship-between-brand-and-products.png)
+![Product Category Grouping](assets/relationship-between-brand-and-products.png)
 
 #### Product And Manufacturer Relationship
-![Product And Manufacturer Relationship](assets/relationship-between-manufacturer-and-products.png)
+![Product Category Grouping](assets/relationship-between-manufacturer-and-products.png)
 ## Authors And Contributors
 
 - [@heyramak](https://github.com/heyramak)
