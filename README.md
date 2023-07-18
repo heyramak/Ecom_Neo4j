@@ -37,14 +37,14 @@ Replace the `CONTAINER_NAME_OR_ID` with Wordpress container name or ID on the co
 ```
 #### Step 2 - Login Into Wordpress
 Access the Wordpress from ```http://localhost:8080/wp-admin/``` and login with default credentials.
-      - Username: user
-      - Password: bitnami
+- Username: user
+- Password: bitnami
 
 #### Step 3 - Generate RestAPI keys
 
 Follow the steps and generate the restapi keys and update that in .env files in both backend folder.
 ```Dashboard > Woocommerce > Settings > Advanced > RestAPI```
-![Step - 1](assets\restapi-key-gen-step1.jpg)
+![Step - 1](https://gitlab.com/heyramak/one-stop-medical-shop/-/blob/main/assets/restapi-key-gen-step1.jpg)
 ![Step - 2](assets\restapi-key-gen-step2.jpg)
 
 #### Data Population App For Neo4j
